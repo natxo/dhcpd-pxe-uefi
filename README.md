@@ -4,6 +4,7 @@ Tested with ESXi 6.5 and Centos 7
 
 dhcpd.conf
 
+````
 option space pxelinux;
 option pxelinux.magic code 208 = string;
 option pxelinux.configfile code 209 = text;
@@ -20,6 +21,7 @@ class "pxeclients" {
         filename "pxelinux.0";
     }
 }
+````
 
 https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Installation_Guide/chap-installation-server-setup.html
 
